@@ -3,7 +3,7 @@
     "version": 1,
     "newProjectRoot": "projects",
     "projects": {
-        "Angular-V17-Template": {
+        "devxportfolio": {
             "projectType": "application",
             "schematics": {
                 "@schematics/angular:component": {
@@ -17,14 +17,23 @@
                 "build": {
                     "builder": "@angular-devkit/build-angular:application",
                     "options": {
-                        "outputPath": "dist/Angular-V17-Template",
+                        "outputPath": "dist/devxportfolio",
                         "index": "src/index.html",
                         "browser": "src/main.ts",
-                        "polyfills": ["zone.js"],
+                        "polyfills": [
+                            "zone.js"
+                        ],
                         "tsConfig": "tsconfig.app.json",
                         "inlineStyleLanguage": "scss",
-                        "assets": ["src/favicon.ico", "src/assets"],
-                        "styles": ["src/styles.scss"],
+                        "assets": [
+                            "src/favicon.ico",
+                            "src/assets"
+                        ],
+                        "styles": [
+                            "src/styles.scss",
+                            "node_modules/primeng/resources/themes/lara-light-purple/theme.css",
+                            "node_modules/primeng/resources/primeng.min.css"
+                        ],
                         "scripts": [],
                         "server": "src/main.server.ts",
                         "prerender": true,
@@ -60,10 +69,10 @@
                     "builder": "@angular-devkit/build-angular:dev-server",
                     "configurations": {
                         "production": {
-                            "buildTarget": "Angular-V17-Template:build:production"
+                            "buildTarget": "devxportfolio:build:production"
                         },
                         "development": {
-                            "buildTarget": "Angular-V17-Template:build:development"
+                            "buildTarget": "devxportfolio:build:development"
                         }
                     },
                     "defaultConfiguration": "development"
@@ -71,20 +80,23 @@
                 "extract-i18n": {
                     "builder": "@angular-devkit/build-angular:extract-i18n",
                     "options": {
-                        "buildTarget": "Angular-V17-Template:build"
+                        "buildTarget": "devxportfolio:build"
                     }
                 },
                 "lint": {
                     "builder": "@angular-eslint/builder:lint",
                     "options": {
-                        "lintFilePatterns": ["src/**/*.ts", "src/**/*.html"]
+                        "lintFilePatterns": [
+                            "src/**/*.ts",
+                            "src/**/*.html"
+                        ]
                     }
                 },
                 "storybook": {
                     "builder": "@storybook/angular:start-storybook",
                     "options": {
                         "configDir": ".storybook",
-                        "browserTarget": "Angular-V17-Template:build",
+                        "browserTarget": "devxportfolio:build",
                         "compodoc": false,
                         "port": 6006
                     }
@@ -93,7 +105,7 @@
                     "builder": "@storybook/angular:build-storybook",
                     "options": {
                         "configDir": ".storybook",
-                        "browserTarget": "Angular-V17-Template:build",
+                        "browserTarget": "devxportfolio:build",
                         "compodoc": false,
                         "outputDir": "storybook-static"
                     }
@@ -103,7 +115,7 @@
     },
     "cli": {
         "schematicCollections": [
-          "@angular-eslint/schematics"
+            "@angular-eslint/schematics"
         ],
         "analytics": false
     }

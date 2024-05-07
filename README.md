@@ -1,4 +1,4 @@
-# Angular V17 Template · ![GitHub License](https://img.shields.io/github/license/GabrielToth/Angular-V17-Template?color=blue) ![Static Badge](https://img.shields.io/badge/-18.10.0-g?style=&logo=node.js&logoColor=white) ![Static Badge](https://img.shields.io/badge/PRs-welcome-g)
+# Angular V17 Template · ![GitHub License](https://img.shields.io/github/license/GabrielToth/devxportfolio?color=blue) ![Static Badge](https://img.shields.io/badge/-18.10.0-g?style=&logo=node.js&logoColor=white) ![Static Badge](https://img.shields.io/badge/PRs-welcome-g)
 
 The Angular V17 Template is an advanced and comprehensive tool for efficiently bootstrapping Angular projects. Built for the latest version of Angular, this template offers a well-organized directory structure, ready for scalable development. Additionally, it features an integrated system to handle error pages and site maintenance states, providing a robust development experience and easing the creation of modern web applications. With clear requirements and simple installation, the Angular V17 Template is the ideal choice for developers seeking a solid and flexible foundation for their Angular projects.
 
@@ -30,11 +30,11 @@ npm install -g @angular/cli
 1. Open Git Bash in the directory where you want to clone the repository.
 2. Enter the command `git clone` followed by the URL you copied:
     ```
-    git clone https://github.com/GabrielToth/Angular-V17-Template
+    git clone https://github.com/GabrielToth/devxportfolio
     ```
 3. Use the `cd` command to enter the directory of the cloned repository:
     ```
-    cd Angular-V17-Template
+    cd devxportfolio
     ```
 
 ## Step 3 - Install all packages
@@ -137,7 +137,7 @@ By adhering to these guidelines, we can maintain a well-organized and collaborat
 
 If you are experiencing difficulties while committing or pushing your solution, we recommend checking Issue #5 or the issues in the Husky repository for a more detailed understanding of reported problems.
 
-**Issue #5**: [Link to Issue #5](https://github.com/GabrielToth/Angular-V17-Template/issues/5)
+**Issue #5**: [Link to Issue #5](https://github.com/GabrielToth/devxportfolio/issues/5)
 
 Husky plays a crucial role in code quality control, and issues related to it can impact the development workflow. Make sure to review discussions in the issues to find solutions or relevant information about any specific problem you might be facing.
 
@@ -146,3 +146,9 @@ Remember, transparent and collaborative communication is key to overcoming chall
 ---
 
 Feel free to tailor this draft to fit the specifics of your project and documentation style.
+
+
+
+# Commands
+
+npx json-server "./src/assets/data/db.json

@@ -1,1 +1,8 @@
-<p>menu works!</p>
+@for (item of menuItems; track $index) {
+
+<a class="p-menuitem-link" [routerLink]="item.routerLink" class="p-menuitem-link">
+    <span [class]="item.icon"></span>
+    <span class="ml-2">{{ item.label }}</span>
+</a>
+<br>
+}

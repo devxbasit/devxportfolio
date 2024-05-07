@@ -18,4 +18,4 @@ import { HttpClientModule } from '@angular/common/http'
         MenuComponent,
     ],
 })
-export class AppComponent {}
+export class AppComponent { }

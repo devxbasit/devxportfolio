@@ -10,8 +10,8 @@
         "prepare": "husky install",
         "pretty-quick": "pretty-quick --staged",
         "server": "json-server --watch ./src/assets/data/db.json",
-        "storybook": "ng run Angular-V17-Template:storybook",
-        "build-storybook": "ng run Angular-V17-Template:build-storybook",
+        "storybook": "ng run devxportfolio:storybook",
+        "build-storybook": "ng run devxportfolio:build-storybook",
         "test": "jest",
         "test:coverage": "jest --coverage",
         "test:watch": "jest --watch"
@@ -29,6 +29,8 @@
         "@angular/router": "^17.0.0",
         "@angular/ssr": "^17.0.2",
         "json-server": "^0.17.4",
+        "primeflex": "^3.3.1",
+        "primeng": "^17.16.0",
         "rxjs": "~7.8.0",
         "tslib": "^2.3.0",
         "zone.js": "~0.14.2"
