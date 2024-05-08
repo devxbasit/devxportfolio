@@ -1,8 +1,16 @@
-@for (item of menuItems; track $index) {
+<div class="grid">
 
-<a class="p-menuitem-link" [routerLink]="item.routerLink" class="p-menuitem-link">
-    <span [class]="item.icon"></span>
-    <span class="ml-2">{{ item.label }}</span>
-</a>
-<br>
-}
+    <div class="col">1111</div>
+    <div class="col">
+
+
+        @for (item of menuItems; track $index) {
+
+        <a class="p-menuitem-link" [routerLink]="item.routerLink" class="p-menuitem-link">
+            <span [class]="item.icon"></span>
+            <span class="ml-2">{{ item.label }}</span>
+        </a>
+        <br>
+        }
+    </div>
+</div>

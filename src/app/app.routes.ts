@@ -29,16 +29,6 @@ export const routes: Routes = [
         canActivate: [MaintenanceGuard],
     },
     {
-        path: 'blog',
-        loadComponent: () => import("./features/blog/blog-dashboard/blog-dashboard.component").then(c => c.BlogDashboardComponent),
-        canActivate: [MaintenanceGuard],
-    },
-    {
-        path: 'login',
-        loadComponent: () => import("./features/auth/login/login.component").then(c => c.LoginComponent),
-        canActivate: [MaintenanceGuard],
-    },
-    {
         path: 'maintenance',
         loadComponent: () => import("./features/maintenance/maintenance.component").then(c => c.MaintenanceComponent),
     },
@@ -50,5 +40,17 @@ export const routes: Routes = [
     {
         path: '**',
         redirectTo: 'error',
-    },
+    }
+
+    // Todo - to be done later
+    // {
+    //     path: 'blog',
+    //     loadComponent: () => import("./features/blog/blog-dashboard/blog-dashboard.component").then(c => c.BlogDashboardComponent),
+    //     canActivate: [MaintenanceGuard],
+    // },
+    // {
+    //     path: 'login',
+    //     loadComponent: () => import("./features/auth/login/login.component").then(c => c.LoginComponent),
+    //     canActivate: [MaintenanceGuard],
+    // },
 ]

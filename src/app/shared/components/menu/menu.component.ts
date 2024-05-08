@@ -1,14 +1,16 @@
 import { CommonModule } from '@angular/common'
 import { RouterLink } from '@angular/router'
 import { CustomizationService } from '../../../core/services/customization.service'
-import { MenuItem } from 'primeng/api'
+import { MenubarModule } from 'primeng/menubar'
 import { Component, OnInit, inject } from '@angular/core'
+import { MenuItem } from 'primeng/api'
+
 
 
 @Component({
     selector: 'app-menu',
     standalone: true,
-    imports: [CommonModule, RouterLink],
+    imports: [CommonModule, RouterLink, MenubarModule],
     templateUrl: './menu.component.html',
     styleUrl: './menu.component.scss',
 })
