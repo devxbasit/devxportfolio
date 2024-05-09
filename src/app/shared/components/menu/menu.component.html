@@ -1,16 +1,11 @@
-<div class="grid">
-
-    <div class="col">1111</div>
-    <div class="col">
-
-
+<div class="grid grid-cols-2">
+    <div class="col-span-2"> devxbasit</div>
+    <div>
         @for (item of menuItems; track $index) {
-
-        <a class="p-menuitem-link" [routerLink]="item.routerLink" class="p-menuitem-link">
-            <span [class]="item.icon"></span>
-            <span class="ml-2">{{ item.label }}</span>
-        </a>
-        <br>
+        <a class="text-xl capitalize text-color-secondary no-underline mr-2"
+            routerLink="item.routerLink">{{item.label}}</a>
         }
     </div>
+
+
 </div>

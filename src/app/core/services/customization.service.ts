@@ -23,7 +23,7 @@ export class CustomizationService {
       {
         routerLink: '',
         label: 'home',
-        icon: 'home',
+        icon: '',
       },
       {
         routerLink: 'skills',

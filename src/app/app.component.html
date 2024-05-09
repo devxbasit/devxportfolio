@@ -1,17 +1,5 @@
-<div class="grid nested-grid ">
-
-    <!-- nav -->
-    <div class="col-12 col-offset-0 xl:col-10 xl:col-offset-1">
-        <app-menu></app-menu>
-    </div>
-
-    <!-- main -->
-    <div class="col-12 col-offset-0 xl:col-10 xl:col-offset-1">
-        <router-outlet></router-outlet>
-    </div>
-
-    <!-- footer -->
-    <div class="col-12 col-offset-0 xl:col-10 xl:col-offset-1">
-        <app-footer></app-footer>
-    </div>
+<div class="xl:container xl:mx-auto">
+    <app-menu></app-menu>
+    <router-outlet></router-outlet>
+    <app-footer></app-footer>
 </div>
